@@ -32,10 +32,11 @@
     </p>
 </section>
 
- <svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
 
   <rect width="900" height="620" fill="#f7f8fb"/>
 
+  <!-- Title -->
   <text x="50%" y="60" text-anchor="middle"
         font-family="Inter, system-ui, sans-serif"
         font-size="28" font-weight="700" fill="#111827">
@@ -47,34 +48,28 @@
     Value Chain Fairness Indicator
   </text>
 
+  <!-- WHEEL -->
   <g transform="translate(450,330)">
 
+    <!-- Outer circle -->
     <circle cx="0" cy="0" r="190" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
 
-    <!-- ROTATED ORDER: Farmer’s pay now at top -->
-    <!-- 1. Farmer’s pay -->
+    <!-- 10 wedges (same colours, same order, Farmer’s pay at top) -->
     <path d="M0,-190 A190,190 0 0,1 118,-147 L0,0 Z" fill="#4caf50"/>
-    <!-- 2. Transparency -->
     <path d="M118,-147 A190,190 0 0,1 185,-35 L0,0 Z" fill="#43a047"/>
-    <!-- 3. Circularity -->
     <path d="M185,-35 A190,190 0 0,1 185,35 L0,0 Z" fill="#8bc34a"/>
-    <!-- 4. Forced labour -->
     <path d="M185,35 A190,190 0 0,1 118,147 L0,0 Z" fill="#fb923c"/>
-    <!-- 5. Deforestation -->
     <path d="M118,147 A190,190 0 0,1 0,190 L0,0 Z" fill="#fdba74"/>
-    <!-- 6. ECBMs -->
     <path d="M0,190 A190,190 0 0,1 -118,147 L0,0 Z" fill="#4caf50"/>
-    <!-- 7. Individual potential -->
     <path d="M-118,147 A190,190 0 0,1 -185,35 L0,0 Z" fill="#2e7d32"/>
-    <!-- 8. SDGs -->
     <path d="M-185,35 A190,190 0 0,1 -185,-35 L0,0 Z" fill="#4caf50"/>
-    <!-- 9. Demand -->
     <path d="M-185,-35 A190,190 0 0,1 -118,-147 L0,0 Z" fill="#4caf50"/>
-    <!-- 10. Common good -->
     <path d="M-118,-147 A190,190 0 0,1 0,-190 L0,0 Z" fill="#8bc34a"/>
 
+    <!-- Inner hub -->
     <circle cx="0" cy="0" r="95" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
 
+    <!-- Score -->
     <text x="0" y="-4" text-anchor="middle"
           font-family="Inter, system-ui, sans-serif"
           font-size="34" font-weight="700" fill="#111827">
@@ -91,17 +86,49 @@
       Fair Score Framework · 10 dimensions
     </text>
 
-    <!-- Updated radial labels -->
-    <text x="0" y="-225" text-anchor="middle" font-family="Inter" font-size="12">Farmer’s pay · 7</text>
-    <text x="135" y="-185" text-anchor="middle" font-family="Inter" font-size="12">Transparency · 8</text>
-    <text x="215" y="-10" text-anchor="middle" font-family="Inter" font-size="12">Circularity · 6</text>
-    <text x="195" y="105" text-anchor="middle" font-family="Inter" font-size="12">Forced labour · 4</text>
-    <text x="130" y="205" text-anchor="middle" font-family="Inter" font-size="12">Deforestation · 5</text>
-    <text x="-130" y="205" text-anchor="middle" font-family="Inter" font-size="12">ECBMs · 7</text>
-    <text x="-195" y="105" text-anchor="middle" font-family="Inter" font-size="12">Individual potential · 9</text>
-    <text x="-215" y="-10" text-anchor="middle" font-family="Inter" font-size="12">SDGs · 7</text>
-    <text x="-135" y="-185" text-anchor="middle" font-family="Inter" font-size="12">Demand · 7</text>
-    <text x="0" y="-250" text-anchor="middle" font-family="Inter" font-size="12">Common good · 6</text>
+    <!-- ⭐ PERFECTLY ALIGNED RADIAL LABELS ⭐ -->
+    <!-- Each label sits on a circle of radius 225px -->
+    <!-- Angles: 0°, 36°, 72°, ... 324° -->
+
+    <g transform="rotate(0) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Farmer’s pay · 7</text>
+    </g>
+
+    <g transform="rotate(36) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Transparency · 8</text>
+    </g>
+
+    <g transform="rotate(72) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Circularity · 6</text>
+    </g>
+
+    <g transform="rotate(108) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Forced labour · 4</text>
+    </g>
+
+    <g transform="rotate(144) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Deforestation · 5</text>
+    </g>
+
+    <g transform="rotate(180) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">ECBMs · 7</text>
+    </g>
+
+    <g transform="rotate(216) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Individual potential · 9</text>
+    </g>
+
+    <g transform="rotate(252) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">SDGs · 7</text>
+    </g>
+
+    <g transform="rotate(288) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Demand · 7</text>
+    </g>
+
+    <g transform="rotate(324) translate(0,-225)">
+      <text text-anchor="middle" font-family="Inter" font-size="12">Common good · 6</text>
+    </g>
 
   </g>
 
