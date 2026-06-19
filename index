@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fair Score Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="framework.html">Framework</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Fair Score Framework</h1>
+    <p>A conceptual model designed to measure value chain fairness.</p>
+</header>
+
+<section>
+    <h2>Welcome</h2>
+    <p>
+        The Fair Score Framework provides a structured, research‑based method for evaluating fairness 
+        across organisational value chains. It is grounded in peer‑reviewed academic work and designed 
+        for practical application in real‑world decision‑making.
+    </p>
+    <p>
+        Explore the framework, understand how it works, and learn about its origins.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Fair Score Framework — Licensed under CC BY 4.0</p>
+</footer>
+
+</body>
+</html>
