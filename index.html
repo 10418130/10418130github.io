@@ -32,24 +32,22 @@
     </p>
 </section>
 
-<svg width="900" height="660" viewBox="0 0 900 660" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
 
-  <rect width="900" height="660" fill="#f7f8fb"/>
+  <rect width="900" height="700" fill="#f7f8fb"/>
 
   <!-- Title -->
   <text x="50%" y="60" text-anchor="middle"
-        font-family="Inter, system-ui, sans-serif"
-        font-size="28" font-weight="700" fill="#111827">
+        font-family="Inter" font-size="28" font-weight="700" fill="#111827">
     Fair Score Framework
   </text>
   <text x="50%" y="92" text-anchor="middle"
-        font-family="Inter, system-ui, sans-serif"
-        font-size="14" fill="#4b5563">
+        font-family="Inter" font-size="14" fill="#4b5563">
     Value Chain Fairness Indicator
   </text>
 
   <!-- WHEEL -->
-  <g transform="translate(450,350)">
+  <g transform="translate(450,380)">
 
     <!-- Outer circle -->
     <circle cx="0" cy="0" r="190" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
@@ -67,43 +65,74 @@
     <path d="M-118,-147 A190,190 0 0,1 0,-190 L0,0 Z" fill="#8bc34a"/>
 
     <!-- Radial separators -->
-    <line x1="0" y1="0" x2="0" y2="-190" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="118" y2="-147" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="185" y2="-35" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="185" y2="35" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="118" y2="147" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="0" y2="190" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="-118" y2="147" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="-185" y2="35" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="-185" y2="-35" stroke="white" stroke-width="3"/>
-    <line x1="0" y1="0" x2="-118" y2="-147" stroke="white" stroke-width="3"/>
+    <g stroke="white" stroke-width="3">
+      <line x1="0" y1="0" x2="0" y2="-190"/>
+      <line x1="0" y1="0" x2="118" y2="-147"/>
+      <line x1="0" y1="0" x2="185" y2="-35"/>
+      <line x1="0" y1="0" x2="185" y2="35"/>
+      <line x1="0" y1="0" x2="118" y2="147"/>
+      <line x1="0" y1="0" x2="0" y2="190"/>
+      <line x1="0" y1="0" x2="-118" y2="147"/>
+      <line x1="0" y1="0" x2="-185" y2="35"/>
+      <line x1="0" y1="0" x2="-185" y2="-35"/>
+      <line x1="0" y1="0" x2="-118" y2="-147"/>
+    </g>
 
     <!-- Inner hub -->
     <circle cx="0" cy="0" r="95" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
 
     <!-- Hub text -->
     <text x="0" y="-10" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif"
-          font-size="34" font-weight="700" fill="#111827">
+          font-family="Inter" font-size="34" font-weight="700" fill="#111827">
       83/100
     </text>
     <text x="0" y="18" text-anchor="middle"
-          font-family="Inter, system-ui, sans-serif"
-          font-size="16" font-weight="600" fill="#16a34a">
+          font-family="Inter" font-size="16" font-weight="600" fill="#16a34a">
       Grade A
     </text>
 
-    <!-- Labels INSIDE wedges (radius = 95, away from white lines) -->
-    <text x="0" y="-95" text-anchor="middle" font-family="Inter" font-size="12">Farmer’s pay · 8</text>
-    <text x="56" y="-78" text-anchor="middle" font-family="Inter" font-size="12">Transparency · 8</text>
-    <text x="91" y="-29" text-anchor="middle" font-family="Inter" font-size="12">Circularity · 7</text>
-    <text x="91" y="29" text-anchor="middle" font-family="Inter" font-size="12">Forced labour · 9</text>
-    <text x="56" y="78" text-anchor="middle" font-family="Inter" font-size="12">Deforestation · 9</text>
-    <text x="0" y="95" text-anchor="middle" font-family="Inter" font-size="12">ECBMs · 9</text>
-    <text x="-56" y="78" text-anchor="middle" font-family="Inter" font-size="12">Individual potential · 8</text>
-    <text x="-91" y="29" text-anchor="middle" font-family="Inter" font-size="12">SDGs · 7</text>
-    <text x="-91" y="-29" text-anchor="middle" font-family="Inter" font-size="12">Demand · 9</text>
-    <text x="-56" y="-78" text-anchor="middle" font-family="Inter" font-size="12">Common good · 9</text>
+    <!-- LEADER LINES + LABELS -->
+    <!-- Each leader line starts inside the slice (radius 120) and ends outside (radius 230) -->
+
+    <!-- 1 Farmer’s pay -->
+    <line x1="0" y1="-120" x2="0" y2="-230" stroke="black" stroke-width="1.2"/>
+    <text x="0" y="-245" text-anchor="middle" font-family="Inter" font-size="13">Farmer’s pay · 8</text>
+
+    <!-- 2 Transparency -->
+    <line x1="70" y1="-97" x2="150" y2="-150" stroke="black" stroke-width="1.2"/>
+    <text x="170" y="-155" text-anchor="start" font-family="Inter" font-size="13">Transparency · 8</text>
+
+    <!-- 3 Circularity -->
+    <line x1="115" y1="-35" x2="210" y2="-35" stroke="black" stroke-width="1.2"/>
+    <text x="225" y="-30" text-anchor="start" font-family="Inter" font-size="13">Circularity · 7</text>
+
+    <!-- 4 Forced labour -->
+    <line x1="115" y1="35" x2="210" y2="35" stroke="black" stroke-width="1.2"/>
+    <text x="225" y="40" text-anchor="start" font-family="Inter" font-size="13">Forced labour · 9</text>
+
+    <!-- 5 Deforestation -->
+    <line x1="70" y1="97" x2="150" y2="150" stroke="black" stroke-width="1.2"/>
+    <text x="170" y="155" text-anchor="start" font-family="Inter" font-size="13">Deforestation · 9</text>
+
+    <!-- 6 ECBMs -->
+    <line x1="0" y1="120" x2="0" y2="230" stroke="black" stroke-width="1.2"/>
+    <text x="0" y="250" text-anchor="middle" font-family="Inter" font-size="13">ECBMs · 9</text>
+
+    <!-- 7 Individual potential -->
+    <line x1="-70" y1="97" x2="-150" y2="150" stroke="black" stroke-width="1.2"/>
+    <text x="-170" y="155" text-anchor="end" font-family="Inter" font-size="13">Individual potential · 8</text>
+
+    <!-- 8 SDGs -->
+    <line x1="-115" y1="35" x2="-210" y2="35" stroke="black" stroke-width="1.2"/>
+    <text x="-225" y="40" text-anchor="end" font-family="Inter" font-size="13">SDGs · 7</text>
+
+    <!-- 9 Demand -->
+    <line x1="-115" y1="-35" x2="-210" y2="-35" stroke="black" stroke-width="1.2"/>
+    <text x="-225" y="-30" text-anchor="end" font-family="Inter" font-size="13">Demand · 9</text>
+
+    <!-- 10 Common good -->
+    <line x1="-70" y1="-97" x2="-150" y2="-150" stroke="black" stroke-width="1.2"/>
+    <text x="-170" y="-155" text-anchor="end" font-family="Inter" font-size="13">Common good · 9</text>
 
   </g>
 
