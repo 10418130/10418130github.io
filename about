@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About — Fair Score Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="framework.html">Framework</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>About</h1>
+    <p>Origins and purpose of the Fair Score Framework.</p>
+</header>
+
+<section>
+    <h2>Background</h2>
+    <p>
+        The Fair Score Framework is based on academic research examining fairness in organisational 
+        value chains. It was developed to provide a practical, structured tool for assessing fairness 
+        in real‑world contexts.
+    </p>
+
+    <h2>Research Foundation</h2>
+    <p>
+        The conceptual model is grounded in research deposited at HAL:
+        <a href="https://hal.science/hal-05577901/">hal‑05577901</a>.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Fair Score Framework — Licensed under CC BY 4.0</p>
+</footer>
+
+</body>
+</html>
