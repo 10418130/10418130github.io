@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How It Works — Fair Score Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="framework.html">Framework</a>
+    <a href="how-it-works.html" class="active">How It Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>How It Works</h1>
+    <p>A simple, structured process for evaluating fairness.</p>
+</header>
+
+<section>
+    <h2>Step‑by‑Step Process</h2>
+
+    <ol>
+        <li><strong>Define the value chain</strong> — Identify actors, flows, and decision points.</li>
+        <li><strong>Assess fairness dimensions</strong> — Apply the framework’s criteria.</li>
+        <li><strong>Score each dimension</strong> — Use the structured scoring method.</li>
+        <li><strong>Interpret results</strong> — Identify imbalances and improvement areas.</li>
+        <li><strong>Implement changes</strong> — Use insights to guide fairer decisions.</li>
+    </ol>
+
+    <p>
+        The methodology is designed to be transparent, replicable, and grounded in empirical research.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Fair Score Framework — Licensed under CC BY 4.0</p>
+</footer>
+
+</body>
+</html>
